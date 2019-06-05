@@ -8,20 +8,17 @@ import datetime
 
 def index(request):
 
-    # get all goalie games
+    # get all goalie games (hardcoded to 2018-2019 season by start and end dates)
     r_url = "https://api.nhle.com/stats/rest/goalies?isAggregate=false&reportType=goalie_basic&isGame=true&reportName=goaliesummary&sort=[{%22property%22:%22wins%22,%22direction%22:%22DESC%22}]&cayenneExp=leagueId=133%20and%20gameDate%3E=%222018-10-07%22%20and%20gameDate%3C=%222019-04-10%2023:59:59%22%20and%20gameTypeId=2"
     r = requests.get(r_url)
-    
-    print('Retrieved goalie game ids')
-
-    # print(r.json()['data'])
 
     goalie_name = request.GET.get('goalie_name', '')
 
+    # parse goalie games listing for querying
     tree = objectpath.Tree(r.json())
     result = tree.execute(f"$.data[@.playerName is '{goalie_name}']")
 
-    ids = []
+    ids = [] # keep track of game ids for the goalie
     goalie_team_abbrev = "not found"
 
     for game in result:
@@ -30,7 +27,7 @@ def index(request):
 
 
     if goalie_team_abbrev == 'not found':
-        return JsonResponse({"error": "goalie not found"}, safe=False) 
+        return JsonResponse({"error": "goalie not found"}, safe=False, status=404) 
 
     team_id = team_id_from_abbrev(goalie_team_abbrev)
 
