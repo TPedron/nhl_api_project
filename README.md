@@ -89,6 +89,8 @@ http://localhost:8000/goalie_pp_support/?goalie_name=Charlie%20Lindgren
 }
 ```
 
+* *Note* that the `total_pp_time` is a sum of all the time all players spent on the powerplay, not the amount of minutes the goalie spent on the powerplay.  This explains why the number is so high.
+
 
 #### Failure
 
