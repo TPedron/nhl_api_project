@@ -116,34 +116,34 @@ As a quick example of this, if you compare the `season_summary` json for both An
 **Andersen**
 ```json
 "season_summary": {
-"goalie_name": "Frederik Andersen",
-"team_abbrev": "TOR",
-"team_id": 10,
-"num_games": 58,
-"total_pp_time": "21:46:52",
-"total_pp_shots": 259,
-"total_pp_goals": 37,
-"total_pp_assists": 72,
-"avg_pp_shots_per_60_mins": 11.891037086160281,
-"avg_pp_goals_per_60_mins": 1.6987195837371831,
-"avg_pp_assists_per_60_mins": 3.3056164872723564
+    "goalie_name": "Frederik Andersen",
+    "team_abbrev": "TOR",
+    "team_id": 10,
+    "num_games": 58,
+    "total_pp_time": "21:46:52",
+    "total_pp_shots": 259,
+    "total_pp_goals": 37,
+    "total_pp_assists": 72,
+    "avg_pp_shots_per_60_mins": 11.891037086160281,
+    "avg_pp_goals_per_60_mins": 1.6987195837371831,
+    "avg_pp_assists_per_60_mins": 3.3056164872723564
 }
 ```
 
 **Sparks**
 ```json
 "season_summary": {
-"goalie_name": "Garret Sparks",
-"team_abbrev": "TOR",
-"team_id": 10,
-"num_games": 20,
-"total_pp_time": "6:27:45",
-"total_pp_shots": 97,
-"total_pp_goals": 8,
-"total_pp_assists": 16,
-"avg_pp_shots_per_60_mins": 15.009671179883945,
-"avg_pp_goals_per_60_mins": 1.2379110251450678,
-"avg_pp_assists_per_60_mins": 2.4758220502901356
+    "goalie_name": "Garret Sparks",
+    "team_abbrev": "TOR",
+    "team_id": 10,
+    "num_games": 20,
+    "total_pp_time": "6:27:45",
+    "total_pp_shots": 97,
+    "total_pp_goals": 8,
+    "total_pp_assists": 16,
+    "avg_pp_shots_per_60_mins": 15.009671179883945,
+    "avg_pp_goals_per_60_mins": 1.2379110251450678,
+    "avg_pp_assists_per_60_mins": 2.4758220502901356
 }
 ```
 
