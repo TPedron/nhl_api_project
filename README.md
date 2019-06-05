@@ -14,13 +14,14 @@ This could show if certain goalies help to influence their team's Powerplay in s
 
 First, if you don't already have it installed, please install Docker following the steps at https://docs.docker.com/install/. You will also need the docker-compose tool which can be installed easily through a package manager such as brew with `brew install docker-compose`.
 
-Next, run `git clone https://github.com/TPedron/nhl_api_project.git` to clone the repository to your local machine, then continue on to each subsection below.
+Next, run `git clone https://github.com/TPedron/nhl_api_project.git` to clone the repository to your local machine.
 
 Note that both projects will need to be brought up together so the application can perform.
 
 Then run the following commands in the project root directory:
 
 ```
+cd nhl_api_project
 docker-compose build
 docker-compose up
 ```
