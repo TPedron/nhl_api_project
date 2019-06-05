@@ -152,5 +152,4 @@ def team_id_from_abbrev(goalie_team_abbrev):
         "WSH": 15,
         "WPG": 52
 	}
-
     return team_abbrev_with_id[goalie_team_abbrev]

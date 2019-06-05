@@ -4,7 +4,11 @@
 
 This project is a very simple Python/ Django application I wrote in one evening.
 
-Through monitoring HTTP requests that http://www.nhl.com/stats/player? makes when running its various reports, I captured the undocumented GET calls being made and wrote a wrapper API that will retrieve and aggregate the Powerplay stats for a goale's teams in games they played.  This could show if certain goalies help to influence their team's Powerplay in some way (confidence instilled in team allowing them to take further risks, puck playing ability on zone clearances, etc.)
+Through monitoring HTTP requests that the NHL's stats page (http://www.nhl.com/stats/player) makes when running its various reports, I captured the undocumented GET calls, figured out how they worked and wrote a wrapper API that will retrieve and aggregate the Powerplay stats for a given goalie's teammates in games they played in.  
+
+This could show if certain goalies help to influence their team's Powerplay in some way (confidence instilled in team allowing them to take further risks, puck playing ability on zone clearances, etc.).  
+
+*Of course*, it is not a very "advanced statistic" but its interesting to look at and is an example of my work with Python, Django and NHL statistics.
 
 ## Setup
 
@@ -21,9 +25,9 @@ docker-compose build
 docker-compose up
 ```
 
-That will bring the application up and running.
+That will bring the application up and running.  If there are any questions with these steps, please let me know.
 
-Then, go to your web browser or a tool such as Postman and follow the API instructions below.
+If all of the above worked successfully, go to your web browser (or a tool such as Postman) and follow the API instructions below.
 
 ## API
 
@@ -45,7 +49,7 @@ http://localhost:8000/goalie_pp_support/?goalie_name=Frederik%20Andersen
 
 #### Success
 
-**Request:** (I chose a goalie with only 1 game played last season to have a small payload example)
+**Request:** (I chose a goalie with only 1 game played last season to have a small payload example for this doc)
 
 ```
 http://localhost:8000/goalie_pp_support/?goalie_name=Charlie%20Lindgren
