@@ -58,100 +58,28 @@ http://localhost:8000/goalie_pp_support/?goalie_name=Charlie%20Lindgren
 ```json
 {
     "season_summary": {
-    "goalie_name": "Michael Hutchinson",
-    "team_abbrev": "FLA",
-    "team_id": 13,
-    "num_games": 9,
-    "total_pp_time": "2:27:03",
-    "total_pp_shots": 22,
-    "total_pp_goals": 4,
-    "total_pp_assists": 8,
-    "avg_pp_shots_per_60_mins": 8.976538592315539,
-    "avg_pp_goals_per_60_mins": 1.6320979258755526,
-    "avg_pp_assists_per_60_mins": 3.264195851751105
+        "goalie_name": "Charlie Lindgren",
+        "team_abbrev": "MTL",
+        "team_id": 8,
+        "num_games": 1,
+        "total_pp_time": "0:00:30",
+        "total_pp_shots": 1,
+        "total_pp_goals": 1,
+        "total_pp_assists": 2,
+        "avg_pp_shots_per_60_mins": 120,
+        "avg_pp_goals_per_60_mins": 120,
+        "avg_pp_assists_per_60_mins": 240
     },
     "game_summaries": [
-    {
-    "gameId": 2018020099,
-    "opp_team": "WSH",
-    "num_players_with_pp_time": 15,
-    "total_player_pp_time": "0:46:53",
-    "total_pp_shots": 7,
-    "total_pp_goals": 2,
-    "total_pp_assists": 4
-    },
-    {
-    "gameId": 2018020639,
-    "opp_team": "",
-    "num_players_with_pp_time": 0,
-    "total_player_pp_time": "0:00:00",
-    "total_pp_shots": 0,
-    "total_pp_goals": 0,
-    "total_pp_assists": 0
-    },
-    {
-    "gameId": 2018020672,
-    "opp_team": "",
-    "num_players_with_pp_time": 0,
-    "total_player_pp_time": "0:00:00",
-    "total_pp_shots": 0,
-    "total_pp_goals": 0,
-    "total_pp_assists": 0
-    },
-    {
-    "gameId": 2018020108,
-    "opp_team": "DET",
-    "num_players_with_pp_time": 15,
-    "total_player_pp_time": "0:50:00",
-    "total_pp_shots": 6,
-    "total_pp_goals": 0,
-    "total_pp_assists": 0
-    },
-    {
-    "gameId": 2018020652,
-    "opp_team": "",
-    "num_players_with_pp_time": 0,
-    "total_player_pp_time": "0:00:00",
-    "total_pp_shots": 0,
-    "total_pp_goals": 0,
-    "total_pp_assists": 0
-    },
-    {
-    "gameId": 2018020690,
-    "opp_team": "",
-    "num_players_with_pp_time": 0,
-    "total_player_pp_time": "0:00:00",
-    "total_pp_shots": 0,
-    "total_pp_goals": 0,
-    "total_pp_assists": 0
-    },
-    {
-    "gameId": 2018020621,
-    "opp_team": "",
-    "num_players_with_pp_time": 0,
-    "total_player_pp_time": "0:00:00",
-    "total_pp_shots": 0,
-    "total_pp_goals": 0,
-    "total_pp_assists": 0
-    },
-    {
-    "gameId": 2018020080,
-    "opp_team": "PHI",
-    "num_players_with_pp_time": 10,
-    "total_player_pp_time": "0:20:40",
-    "total_pp_shots": 3,
-    "total_pp_goals": 1,
-    "total_pp_assists": 2
-    },
-    {
-    "gameId": 2018020122,
-    "opp_team": "NYR",
-    "num_players_with_pp_time": 12,
-    "total_player_pp_time": "0:29:30",
-    "total_pp_shots": 6,
-    "total_pp_goals": 1,
-    "total_pp_assists": 2
-    }
+        {
+            "gameId": 2018021259,
+            "opp_team": "TOR",
+            "num_players_with_pp_time": 5,
+            "total_player_pp_time": "0:00:30",
+            "total_pp_shots": 1,
+            "total_pp_goals": 1,
+            "total_pp_assists": 2
+        }
     ]
 }
 ```
