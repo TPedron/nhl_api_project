@@ -178,4 +178,5 @@ Obviously, since this app was put together in a single evening, there are many a
     * Ideally the index endpoint would be set up as `goalies/` and would return a list of goalie ids.
     * Using those goalie_ids, you would then make a call such as `goalies/<goalie id>/pp_support` to retrieve the individual goalie powerplay support stats.
 * Currently doesn't handle the case of a goalie playing for multiple teams in the season (such as Michael Hutchinson)
-* Ideally hardcoded NHL API Calls are not hardcoded as they are in the project at the moment.
+* Ideally the NHL API Calls are not hardcoded as they are in the project at the moment.
+* Right now all the data wueries and calculations are done in memory using a JSON query library called ObjectPath.  This was due to the fact that the only data I had access to was via the NHL API instead of a proper database.  If I had a database to query, that would allow me to push most calculations and queries to the db-layer and prevent so much data from being pulled into memory.
