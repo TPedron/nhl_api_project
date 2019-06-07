@@ -16,8 +16,6 @@ First, if you don't already have it installed, please install Docker following t
 
 Next, run `git clone https://github.com/TPedron/nhl_api_project.git` to clone the repository to your local machine.
 
-Note that both projects will need to be brought up together so the application can perform.
-
 Then run the following commands in the project root directory:
 
 ```
