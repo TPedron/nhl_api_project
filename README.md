@@ -173,9 +173,9 @@ As well, the NHL assigns each team a `team_id` however there seems to be no logi
 ## Areas For Improvement
 
 Obviously, since this app was put together in a single evening, there are many areas for improvement.
-* All of the logic is held in the the single index view which is not very clean.
-* There are no player/team/game models that would easy the data parsing and processing steps.
-* There is no caching of data records (this app retrieves a lot of data repeatedly rom the NHL API)
+* All of the logic is held in the the single index view which is not very clean.  This should be refactored.
+* There are no player/team/game object models that would make the data parsing and processing steps simpler.
+* There is no caching of data records (this app retrieves a lot of data repeatedly from the NHL API).
 * The endpoint is not very RESTful and not really even an index call
     * Ideally the index endpoint would be set up as `goalies/` and would return a list of goalie ids.
     * Using those goalie_ids, you would then make a call such as `goalies/<goalie id>/pp_support` to retrieve the individual goalie powerplay support stats.
